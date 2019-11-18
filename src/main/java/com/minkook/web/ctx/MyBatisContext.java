@@ -23,8 +23,8 @@ public class MyBatisContext {
     public SqlSessionFactoryBean sqlSessionFactory(DataSource dataSource) throws Exception {
       SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
       factoryBean.setDataSource(dataSource);
-      factoryBean.setConfigLocation(applicationContext.getResource("classpath:META-INF/mybatis-config.xml"));
-      factoryBean.setMapperLocations(applicationContext.getResources("classpath:com/minkook/web/**/*Mapper.xml"));
+  //    factoryBean.setConfigLocation(applicationContext.getResource("classpath:META-INF/mybatis-config.xml"));
+  //    factoryBean.setMapperLocations(applicationContext.getResources("classpath:com/minkook/web/**/*Mapper.xml"));
       return factoryBean;
     }
     
